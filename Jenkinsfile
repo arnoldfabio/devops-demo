@@ -29,6 +29,7 @@ pipeline {
         aws s3 mv $BUILD_TAG.zip s3://ci-workshop-devops/arnold/Artifact/ --region us-east-1 
         ''' 
       } 
+    }
     stage("Deploy") {
       steps {
         script {
@@ -42,7 +43,5 @@ pipeline {
         }
       }
     }
-    }
-
   }
-}
+} 
