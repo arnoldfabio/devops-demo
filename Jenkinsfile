@@ -54,9 +54,9 @@ pipeline {
           def imageName = "${IMAGE_NAME}:${imageTag}"
           def containerName = "arnold"
           def containerPort = 80
-          def applicationName = "AppECS-Arnoldweb-apachearnold"
-          def deploymentGroupName = "DgpECS-Arnoldweb-apachearnold"
-          def taskDefinitionName = "arnold-web"
+          def applicationName = "AppECS-Arnoldweb-arnoldweb"
+          def deploymentGroupName = "DgpECS-Arnoldweb-arnoldweb"
+          def taskDefinitionName = "Arnoldweb"
 
           sh  "                                                                     \
           sed -e 's;%REPO%;${imageName};g'\
